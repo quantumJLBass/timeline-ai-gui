@@ -65,17 +65,8 @@ git add .
 # Commit changes
 git commit -m "Initial commit"
 
-# Create a new GitHub repository
-$REPO_CREATION_OUTPUT = gh repo create $REPO_NAME --public --confirm
+# Set remote to existing GitHub repo
+git remote add origin https://github.com/$GITHUB_USERNAME/$REPO_NAME.git
 
-# Check if repository was created successfully
-if ($REPO_CREATION_OUTPUT -like "*Created repository*$GITHUB_USERNAME/$REPO_NAME on GitHub*") {
-    # Add GitHub repo as remote
-    git remote add origin https://github.com/$GITHUB_USERNAME/$REPO_NAME.git
-
-    # Push to GitHub
-    git push -u origin master
-}
-else {
-    Write-Output "Failed to create GitHub repository. Please check the output for details."
-}
+# Push to GitHub
+git push -u origin master
