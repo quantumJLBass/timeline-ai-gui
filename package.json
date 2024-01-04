@@ -1,23 +1,26 @@
 {
   "name": "timeline",
   "version": "1.0.0",
-  "description": "",
+  "description": "Timeline application",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "dev": "webpack-dev-server --mode development",
-    "build": "webpack --mode production"
+    "react:start": "webpack serve --mode development --open",
+    "react:build": "webpack --mode production",
+    "build": "electron-builder",
+    "dist": "npm run react:build && npm run build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "build": {
+    "appId": "com.yourcompany.timeline"
+  },
   "devDependencies": {
     "@babel/core": "^7.23.7",
     "@babel/preset-env": "^7.23.7",
     "@babel/preset-react": "^7.23.3",
     "babel-loader": "^9.1.3",
     "css-loader": "^6.8.1",
-    "electron": "^28.1.0",
+    "electron": "^28.1.1",
+    "electron-builder": "^24.9.1",
     "electron-packager": "^17.1.2",
     "file-loader": "^6.2.0",
     "html-loader": "^4.2.0",
