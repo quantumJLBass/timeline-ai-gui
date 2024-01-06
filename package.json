@@ -8,10 +8,18 @@
     "react:start": "webpack serve --mode development --open",
     "react:build": "webpack --mode production",
     "build": "electron-builder",
-    "dist": "npm run react:build && npm run build"
+    "dist": "npm run react:build && npm run build",
+    "init-db": "node src/db/initDB.js"
   },
   "build": {
-    "appId": "com.yourcompany.timeline"
+    "appId": "com.rawdeal.timeline"
+  },
+  "dependencies": {
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^9.0.4",
+    "redux": "^5.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.23.7",
@@ -34,12 +42,5 @@
     "webpack-dev-middleware": "^7.0.0",
     "webpack-dev-server": "^4.15.1",
     "workbox-webpack-plugin": "^7.0.0"
-  },
-  "dependencies": {
-    "prop-types": "^15.8.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-redux": "^9.0.4",
-    "redux": "^5.0.1"
   }
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
 
 const App = () => (
   <div>
@@ -7,4 +6,4 @@ const App = () => (
   </div>
 );
 
-export default connect(null)(App);
+export default App;
