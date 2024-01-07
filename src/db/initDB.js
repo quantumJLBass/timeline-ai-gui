@@ -1,16 +1,19 @@
 const db = require('./betterSqliteDB');
 
 function initializeDatabase() {
-  try {
-    await db.authenticate();
-    console.log('Connection to database has been established successfully.');
+  // Execute table creation scripts if they haven't been created yet
+  db.prepare(`
+    CREATE TABLE IF NOT EXISTS timeline_entries (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      title TEXT NOT NULL,
+      date TEXT NOT NULL,
+      description TEXT,
+      is_deleted INTEGER NOT NULL DEFAULT 0
+    )`
+  ).run();
 
-    // Sync all models
-    await db.sync({ force: true }); // Using 'force: true' should be avoided in production environments; it recreates tables every time.
-    console.log('Database synced successfully.');
-  } catch (error) {
-    console.error('Unable to connect to the database:', error);
-  }
+  // Include creation of other necessary tables here
+
   console.log('Database has been initialized successfully.');
 }
 

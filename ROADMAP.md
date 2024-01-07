@@ -8,13 +8,13 @@
   - [X] Set up the project structure with the following folders:
     - [X] `src` for source code
     - [X] `public` for static files
-    - [X] `assets` for assets (nested in `public`)
+    - [X] `assets` for assets (nested in `public` as `public/assets`)
     - [X] `build` for compiled files
     - [X] `dist` for distribution files
     - [X] `test` for testing files
     - [X] `docs` for documentation files
-    - [X] `resources` for resource files
-    - [X] `scripts` for scripts
+    - [X] `resources` for resource files (nested in `src` as `src/resources`)
+    - [X] `scripts` for scripts (nested in `public` as `public/scripts`)
     - [X] `node_modules` for dependencies
   - [X] Review the tasks in this task set and make sure that they are correctly completed.
 
