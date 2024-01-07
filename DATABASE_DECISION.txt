@@ -1,0 +1,31 @@
+Database Schema and Decision Making
+
+[Database Schema Requirements]
+- Secure storage of timeline entries and associated data (e.g., categories, relations, assets).
+- Ability to perform CRUD operations on timeline entries and related data.
+- Efficient querying and retrieval of timeline information based on different criteria.
+- Scalability to accommodate future features such as cloud syncing and multiple user accounts.
+- Data integrity and support for transactional operations.
+- Soft deletion and archival of timeline entries.
+
+[Pros and Cons List]
+Sequelize ORM:
+Pros:
+- Object-Relational Mapping provides abstraction and helps in writing object-oriented code.
+- Built-in support for transactions, relations, and migrations.
+- Works well with complex queries and a relational approach.
+Cons:
+- Steeper learning curve for developers unfamiliar with ORMs.
+- Might be overkill for simple queries or when performance is a critical concern.
+
+better-sqlite3:
+Pros:
+- Simple and straightforward API, easy to learn and use.
+- Fast performance for SQLite databases.
+- Suitable for applications with less complex database interactions.
+Cons:
+- Lacks the abstraction that ORMs provide, might lead to more boilerplate code.
+- Does not have built-in support for transactions and relations, requiring manual implementation.
+
+[Human Decision Required]
+If the most coverage and flexiblitly is with Sequelize ORM and that has the fresher code base then that is the one we want. 
