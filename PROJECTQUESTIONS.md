@@ -1,0 +1,10 @@
+- Some more clarification questions and answers:
+    - Will the application need to handle real-time synchronization of timeline events across multiple instances of the app, for example, if the same user is accessing the app from different machines? Later down the road, for now it's single user mode.
+    - How should the application handle different time zones when displaying timeline events, considering users might input events from various time zones? It should be entered in from the user time zone with an option to change the events time zone and displayed in the default time zone set in the settings, past that it's up to you to ensure that it is smoothly handled as you are trusted to get this done completely my friend.
+    - For media file events, do we require functionality for playing or previewing the media directly within the app? Yes, we can start with svg,jpg,gif etc for images, pdfs/docs/txt/other text formats, audio files(mp3,wav,wma,so on) and video files(mp4,wav,) first. note the AI tie-ins would be to get transcriptions from those formats. Here is the complete list for use to start with.
+        - Audio: MP3, WAV, AAC, FLAC, ALAC, OGG, AIFF, WMA, AC3, DSD
+        - Video: MP4, AVI, MKV, MOV, WMV, FLV, WebM, MPEG-2, HEVC (H.265), H.264
+        - Image: JPEG, PNG, GIF, BMP, TIFF, SVG, HEIF, WebP, RAW, PSD
+        - Text: TXT, PDF, DOCX, HTML, RTF, ODT, EPUB, MOBI, PPTX, CSV
+    - Should the application's detailed view of an event provide editing capabilities for the event's content, or is it strictly for viewing the event's information and its associated audit trail? There should be a front-end and back-end style so all interactive displays will not lead to the CRUD, all the CRUD will be done on the back end side, and the lists of the items would be where the CRUD starts from which the user will access the listings from the menu that will take them to a back end view area.
+- Time zone management for events will default to user-defined settings, adjustable per event.

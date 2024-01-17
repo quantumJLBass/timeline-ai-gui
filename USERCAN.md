@@ -1,0 +1,14 @@
+- A user can:
+    - Install and uninstall the "chain of events" application on Windows 11.
+    - Add new timeline events with associated emails, media, text, people, or locations.
+    - Create and manage "People" as individuals or groups, with groups linkable to other groups. Similarly manage locations.
+    - Link people and places in a backend interface, keeping the timeline interface simple.
+    - Navigate the timeline, zoomign from seconds to 1000 years, and group events by time scale.
+    - View and display links between events visually on the timeline.
+    - Perform CRUD operations for events through a detailed backend interface, separate from the timeline.
+    - Cross-link events with an option for automatic deletion of child events if a parent event is removed.
+    - Receive prompts for optional automatic deletion of child events when a parent event is deleted.
+    - Attach and access various media files and documents to events within the app.
+    - Manage time zone settings for each event, defaulting to the user's local time but adjustable.
+    - View a detailed audit trail for each event, including creation, editing, and deletion history.
+    - Configure application settings, including default zoom level, media autoplay, default time zone, and other display options in the app's settings area.

@@ -19,12 +19,12 @@
   - [X] Review the tasks in this task set and make sure that they are correctly completed.
 
 
-- [ ] Task Set 2: Develop the application shell
-  - [ ] Review and update the list of all tasks as the start of this set of tasks.
-  - [ ] Create main menu with navigation to different views (settings, timeline, input, etc.).
-  - [ ] Add blank views for settings, timeline, input, entry and assest CRUD operations, entry details, and scalable timeline view.
-  - [ ] change the icon of the application which will be asked that the user will provide once asked.
-  - [ ] Reveiw the tasks in this task set and make sure that they are correctly completed.
+- [X] Task Set 2: Develop the application shell
+  - [X] Review and update the list of all tasks as the start of this set of tasks.
+  - [X] Create main menu with navigation to different views (settings, timeline, input, etc.).
+  - [X] Add blank views for settings, timeline, input, entry and assest CRUD operations, entry details, and scalable timeline view.
+  - [X] change the icon of the application which will be asked that the user will provide once asked.
+  - [X] Reveiw the tasks in this task set and make sure that they are correctly completed.
 
 - [ ] Task Set 3: Implement local SQLite database schema.
   - [ ] Review and update the list of all tasks as the start of this set of tasks.
