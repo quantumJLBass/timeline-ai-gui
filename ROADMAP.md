@@ -1,11 +1,11 @@
 # Project Roadmap for "Timeline" Application
-
+# **NEVER USE PLACE HOLDERS ANYWHERE IN THE PROJECT**
 ## Task List:
 
 - [X] Task Set 1: Initialize Project
-  - [ ] Set up the Electron app framework with React and Redux integration.
-  - [ ] Create a 'Hello World' page as an initial test.
-  - [ ] Set up the project structure with the following folders:
+  - [X] Set up the Electron app framework with React and Redux integration.
+  - [X] Create a 'Hello World' page as an initial test.
+  - [X] Set up the project structure with the following folders:
     - [X] `src` for source code
     - [X] `public` for static files
     - [X] `assets` for assets (nested in `public` as `public/assets`)
@@ -13,10 +13,10 @@
     - [X] `dist` for distribution files
     - [X] `test` for testing files
     - [X] `docs` for documentation files
-    - [ ] `resources` for resource files (nested in `src` as `src/resources`)
+    - [X] `resources` for resource files (nested in `src` as `src/resources`)
     - [X] `scripts` for scripts (nested in `public` as `public/scripts`)
     - [X] `node_modules` for dependencies
-  - [ ] Review the tasks in this task set and make sure that they are correctly completed.
+  - [X] Review the tasks in this task set and make sure that they are correctly completed.
 
 
 - [ ] Task Set 2: Develop the application shell
@@ -114,4 +114,4 @@
   - [ ] Reveiw the tasks in this task set and make sure that they are correctly completed.
 
 ## Progress:
-- Current completion estimation: 3%
+- Current completion estimation: 5%
